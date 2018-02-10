@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MaterialChips</string>
+    <string name="add_item">Add</string>
+    <string name="add">Add</string>
+    <string name="delete_item">Delete item at position %d</string>
+    <string name="select_item">Item selected: %s</string>
+    <string name="add_photo">Attach cute cat</string>
+</resources>

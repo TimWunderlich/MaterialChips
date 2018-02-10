@@ -1,0 +1,6 @@
+0:46 kotlin-annotation-processing-gradle
+48:46 kotlin-compiler-embeddable
+96:46 kotlin-reflect
+144:46 kotlin-stdlib
+192:46 kotlin-script-runtime
+240:46 annotations
