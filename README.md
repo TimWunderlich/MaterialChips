@@ -2,6 +2,8 @@
 
 An implementation of Chips as specified by [Google’s Material Design](https://material.io/guidelines/components/chips.html).
 
+![MaterialChips preview](https://raw.githubusercontent.com/TiMWunderlich/MaterialChips/master/docs/tags.png)
+
 ## Features
 
 ### OnClickListener
@@ -20,3 +22,9 @@ An implementation of Chips as specified by [Google’s Material Design](https://
             return true
         }
     }
+
+### Thumbnails
+
+Using [CircleImageView](https://github.com/hdodenhof/CircleImageView), objects implementing the [```ImageProvider```](https://github.com/TimWunderlich/MaterialChips/blob/master/materialchips/src/main/java/org/tiwu/materialchips/ImageProvider.java) interface can be shown with a thumbnail:
+
+![Thumbnails](https://raw.githubusercontent.com/TiMWunderlich/MaterialChips/master/docs/cat.png)
