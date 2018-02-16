@@ -2,6 +2,8 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
+version = "0.1.0"
+
 android {
     compileSdkVersion 27
 
@@ -105,7 +107,7 @@ bintray {
 
     configurations = ['archives']
     pkg {
-        repo = "maven"
+        repo = "android"
         name = "org.tiwu:materialchips"
         websiteUrl = siteUrl
         vcsUrl = gitUrl
