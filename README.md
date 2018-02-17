@@ -4,6 +4,12 @@ An implementation of Chips as specified by [Google’s Material Design](https://
 
 ![MaterialChips preview](https://raw.githubusercontent.com/TiMWunderlich/MaterialChips/master/docs/tags.png)
 
+## Gradle
+    dependencies {
+        ...
+        compile 'org.tiwu:materialchips:0.1.0'
+    }
+
 ## Features
 
 ### OnClickListener
