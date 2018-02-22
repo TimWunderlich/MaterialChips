@@ -72,7 +72,7 @@ Specify the position of an item to remove it from the view:
 Implement ChipsView.OnClickListener:
 
     chips_view.onClickListener = object : ChipsView.OnClickListener() {
-        override fun onDelete(item: Any, position: Int) {
+        override fun onClick(item: Any, position: Int) {
             Toast.makeText(context, alertItemClicked, Toast.LENGTH_SHORT).show()
         }
     }
