@@ -42,7 +42,7 @@ MaterialChips uses an object’s ```toString()``` method to determine the label 
 ​
 Using [CircleImageView](https://github.com/hdodenhof/CircleImageView), objects implementing the [```ImageProvider```](https://github.com/TimWunderlich/MaterialChips/blob/master/materialchips/src/main/java/org/tiwu/materialchips/ImageProvider.java) interface can be shown with a thumbnail:
 
-    class Cat(val label: String, val bitmap: Bitmap) : ImageProvider {
+    class Cat(val label: String, val bitmap: Bitmap?) : ImageProvider {
         override fun toString(): String = label
         override fun getBitmap(): Bitmap? = bitmap
     }
