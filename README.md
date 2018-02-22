@@ -94,7 +94,7 @@ Implement ChipsView.onDeleteListener:
 
 ## Shortcomings
 
-When I created MaterialChips, my own use case was a simple tag cloud to be easily modified, so this library does not provide more elaborate functions you might find in other implementations of Material Design Chips, particularly:
+When I created MaterialChips, my own use case was a simple tag cloud to be easily modified and synced with a server, so this library does not provide more elaborate functions you might find in other implementations of Material Design Chips, particularly:
 
 * The layout (color, etc.) of the chips is not customizable
 * They are not expandable as opposed to the suggestion of the guidelines
