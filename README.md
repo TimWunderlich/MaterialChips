@@ -4,7 +4,7 @@ An implementation of Chips as specified by [Google’s Material Design](https://
 
 ![MaterialChips preview](https://raw.githubusercontent.com/TiMWunderlich/MaterialChips/master/docs/tags.png)
 
-Realizes layout as a RecyclerView using [ChipsLayoutManager](https://github.com/BelooS/ChipsLayoutManager) and allows to easily append and delete individual items programmatically.
+MaterialChips realizes its layout as a RecyclerView using [ChipsLayoutManager](https://github.com/BelooS/ChipsLayoutManager) and allows to easily append and delete individual items programmatically. It does not require its items to implement a certain interface—all they need is to provide a public ```toString()``` method.
 
 ## Gradle
     dependencies {
