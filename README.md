@@ -88,3 +88,5 @@ Implement ChipsView.onDeleteListener:
             return true
         }
     }
+
+```onDelete()``` has to return ```true``` if the item should be removed from the view and ```false``` if it should remain.
