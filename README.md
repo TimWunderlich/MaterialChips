@@ -27,7 +27,7 @@ Realizes layout as a RecyclerView using [ChipsLayoutManager](https://github.com/
 
 Chips are not deletable by default and consequently lack a delete button. If you want them to be deletable, set the ChipView’s ```deletable``` property to ```true```:
 
-    chips_view.deletable = true
+    chips_view.isDeletable = true
     
         
 ### Adding items
