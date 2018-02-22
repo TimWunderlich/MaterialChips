@@ -1,6 +1,6 @@
 # MaterialChips
 
-An implementation of Chips as specified by [Google’s Material Design](https://material.io/guidelines/components/chips.html).
+A slim implementation of Chips as specified by [Google’s Material Design](https://material.io/guidelines/components/chips.html).
 
 ![MaterialChips preview](https://raw.githubusercontent.com/TiMWunderlich/MaterialChips/master/docs/tags.png)
 
@@ -36,10 +36,10 @@ MaterialChips uses an object’s ```toString()``` method to determine the label 
 
     val item = MyClass("label")
     chips_view.addItem(item)
-​
+
 
 ### Thumbnails
-​
+
 Using [CircleImageView](https://github.com/hdodenhof/CircleImageView), objects implementing the [```ImageProvider```](https://github.com/TimWunderlich/MaterialChips/blob/master/materialchips/src/main/java/org/tiwu/materialchips/ImageProvider.java) interface can be shown with a thumbnail:
 
     class Cat(val label: String, val bitmap: Bitmap?) : ImageProvider {
@@ -49,7 +49,7 @@ Using [CircleImageView](https://github.com/hdodenhof/CircleImageView), objects i
     
     chips_view.addItem(Cat("Cat without thumbnail", null))    
     chips_view.addItem(Cat("Cat with thumbnail", bitmap))
-​
+
 ![Thumbnails](https://raw.githubusercontent.com/TiMWunderlich/MaterialChips/master/docs/cat.png)
     
     
@@ -90,3 +90,12 @@ Implement ChipsView.onDeleteListener:
     }
 
 ```onDelete()``` has to return ```true``` if the item should be removed from the view and ```false``` if it should remain.
+
+
+## Shortcomings
+
+When I created MaterialChips, my own use case was a simple tag cloud to be easily modified, so this library does not provide more elaborate functions you might find in other implementations of Material Design Chips, particularly:
+
+* The layout (color, etc.) of the chips is not customizable
+* They are not expandable as opposed to the suggestion of the guidelines
+* They are not suitable for contact fields, since the underlying RecyclerView cannot be easily integrated into an input field
